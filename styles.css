@@ -1,0 +1,467 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+@media screen and (min-width: 0px) {
+    .readMore {
+        display: none;
+    }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+.navMenu { display: none }
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    height: 28px;
+    background-color: white;
+    padding: 10px 5px;
+    justify-content: space-between;
+    color: #00001A;
+    align-items: center;
+}
+.logo {
+    font-size: 28px;
+    text-transform: capitalize;
+    font-family: "Merriweather", serif;
+    font-weight: 800;
+    padding: 0px 20px;
+}
+.menu {
+    padding: 0px 20px;
+}
+.gridMain {
+    display: grid;
+    grid-template-columns: [col]100%;
+    grid-template-rows: [row]33% [row]33% [row]33%;
+    padding: 10px 5px;
+    margin-left: 7px;
+    row-gap: 6%;
+}
+.containerMain {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main2 {
+    grid-column: col 1 / col 2;
+    width: 100%;
+    background-color: #00001A;
+}
+main {
+    width: 100%;
+    padding: 10px 5px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: [col]50% [col]50%;
+    grid-template-rows: [row]30% [row]20% [row]15% [row]6%;
+    row-gap: 20px;
+}
+.item1 {
+    grid-column: col 1 / col 3;
+}
+.item1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item2 {
+    text-transform: capitalize;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    grid-column: col 1 / col 3;
+}
+.item3 {
+    grid-column: col 1 / col 3;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+.item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFDFA;
+    background-color: #F15D51;
+}
+.grid3 {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: [col]100%;
+    grid-template-rows: [row]63px repeat(2, [row]10% [row]5% [row]20px);
+    row-gap: 20px;
+}
+.grid3 > .element1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #E9AA52;
+    text-transform: capitalize;
+}
+.grid3 > .element2, .element4, .element6 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    text-transform: capitalize;
+}
+.grid3 > .element3, .element5, .element7 {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #C5C6CE;
+}
+.line {
+    border-bottom: 1px solid #5E607A;
+}
+.grid4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30% 30% 30%;
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.grid4 .i1 img {
+    width: 113px;
+    height: 130px;
+    object-fit: cover;
+}
+.grid5 {
+    display: grid;
+    grid-template-rows: [row]30px [row]30px [row]60px;
+    row-gap: 5px;
+}
+.grid5 .elem1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #C5C6CE;
+}
+.grid5 .elem2 {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.grid5 .elem3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #5E607A;
+    font-size: 15px;
+}
+.grid4 .i3 img {
+    width: 113px;
+    height: 130px;
+    object-fit: cover;
+}
+.grid6 {
+    display: grid;
+    grid-template-rows: [row]30px [row]30px [row]60px;
+    row-gap: 5px;
+}
+.grid6 .elemen1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #C5C6CE;
+}
+.grid6 .elemen2 {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.grid6 .elemen3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #5E607A;
+    font-size: 15px;
+}
+.grid7 {
+    display: grid;
+    grid-template-rows: [row]30px [row]30px [row]60px;
+    row-gap: 5px;
+}
+.grid7 .smth1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #C5C6CE;
+}
+.grid7 .smth2 {
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.grid7 .smth3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    color: #5E607A;
+    font-size: 15px;
+}
+.i5 img {
+    width: 113px;
+    height: 130px;
+    object-fit: cover;
+}
+.main4 {display: none}
+.main5 {display: none}
+/*.readMore {display: none}*/
+}
+@media screen and (min-width: 375px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: [ col ] 50% [ col ] 50%;
+        grid-template-rows: [ row ] 30% [ row ] 20% [ row ] 15% [ row ] 10%;
+        row-gap: 25px;
+    }
+    .main4 {display: none}
+    .main5 {display: none}
+}
+@media screen and (min-width: 700px) {
+    .grid2 {
+        display: grid;
+        grid-template-columns: [ col ] 50% [ col ] 50%;
+        grid-template-rows: [ row ] 30% [ row ] 10% [ row ] 10% [ row ] 10%;
+        row-gap: 5%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .grid2 {
+    display: grid;
+    grid-template-columns: [ col ] 50% [ col ] 50%;
+    grid-template-rows: [ row ] 30% [ row ] 6% [ row ] 5% [ row ] 5%;
+    row-gap: 5%;
+}
+}
+@media screen and (min-width: 1200px) {
+    .item4 {display: none;}
+    .gridMain {
+        display: grid;
+        grid-template-columns: [ col ] 100%;
+        grid-template-rows: [ row ] 23% [ row ] 38% [ row ] 38%;
+        padding: 10px 5px;
+        margin-left: 7px;
+        row-gap: 6%;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: [ col ] 50% [ col ] 50%;
+        grid-template-rows: [ row ] 30% [ row ] 5% [ row ] 5%;
+        row-gap: 20px;
+    }
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 33% 33% 33%;
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+    .grid5 .elem2 {
+        font-size: 15px;
+    }
+    .grid6 .elemen2 {
+        font-size: 15px;
+    }
+    .grid7 .smth2 {
+        font-size: 15px;
+    }
+    .readMore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFDFA;
+        width: 50%;
+        background-color: #F15D51;
+        margin: 25px;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 1358px) {
+    .menu { display: none}
+    .item4 { display: none}
+    .navMenu {
+        display: flex;
+    }
+    header {
+        display:flex;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 30px;
+    }
+    .containerHeader {
+        width: 85%;
+    }
+    .logo {
+        font-size: 40px;
+    }
+    .navMenu > div {
+        padding: 20px;
+        text-transform: capitalize;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        color: #5E607A;
+    }
+    .gridMain {
+        display: grid;
+        grid-template-columns: [ col ] 33% [ col ] 33% [ col ] 15%;
+        /*grid-template-rows: [ row ] 33% [ row ] 33%;*/
+        grid-template-rows: [ row ] 45% [ row ] 15%;
+        padding: 10px 5px;
+        margin-left: 7px;
+        row-gap: 10%;
+        column-gap: 1%;
+        width: 85%;
+    }
+    .gridMain > .main1 {
+        grid-column: col 1 / col 3;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: [ col ] 50% [ col ] 50%;
+        grid-template-rows: [ row ] 30% [ row ] 20%;
+        row-gap: 20px;
+    }
+    .grid2 > .item2 {
+        grid-column: col 1 / col 2;
+    }
+    .item2 {
+        text-transform: capitalize;
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 56px;
+    }
+    .gridMain > .main2 {
+        grid-column: col 3 / col 4;
+    }
+    .grid2 > .item3 {
+        grid-column: col 2 / col 3;
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    .grid3 {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: [ col ] 100%;
+        grid-template-rows: [ row ] 30px [ row ] 10%;
+        row-gap: 15px;
+    }
+    .image2 > img {
+        width: 113px;
+        height: 130px;
+        object-fit: cover;
+        margin-right: 60px;
+    }
+    .main4 {
+        display:flex;
+        flex-direction: row;
+    }
+    .main5 {
+        display:flex;
+        flex-direction: row;
+    }
+    .grid8 {
+        display: grid;
+        grid-template-rows: [row]30px [row]30px [row]60px;
+        row-gap: 5px;
+    }
+    .grid8 .f1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #C5C6CE;
+    }
+    .grid8 .f2 {
+        font-size: 17px;
+        font-family: "Inter", sans-serif;
+        line-height: 24px;
+        font-weight: 800;
+        text-transform: capitalize;
+    }
+    .grid8 > .f3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        color: #5E607A;
+        font-size: 15px;
+    }
+    .image3 > img {
+        width: 113px;
+        height: 130px;
+        object-fit: cover;
+        margin-right: 60px;
+    }
+    .grid9 {
+        display: grid;
+        grid-template-columns: [col]200px;
+        grid-template-rows: [row]30px [row]30px [row]60px;
+        row-gap: 5px;
+    }
+    .grid9 .b1 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #C5C6CE;
+    }
+    .grid9 .b2 {
+        font-size: 17px;
+        font-family: "Inter", sans-serif;
+        line-height: 24px;
+        font-weight: 800;
+        text-transform: capitalize;
+    }
+    .grid9 > .b3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        line-height: 26px;
+        color: #5E607A;
+        font-size: 15px;
+    }
+    .i3 { display: none }
+    .i4 { display: none }
+    .i5 { display: none }
+    .i6 { display: none }
+}
